@@ -2,7 +2,7 @@
 #akan selalu update
 # chat @kakatoji
 
-date_default_timezone_set("Asia/Jakarta");
+date_default_timezone_set("Asia/Makassar");
 class ModulKu
 {
     public function save($name, $isi){ // filename, content
