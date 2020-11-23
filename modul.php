@@ -1,6 +1,6 @@
 <?php
 #akan selalu update
-# chat @kakatoji
+# created by zelsaddr
 
 date_default_timezone_set("Asia/Makassar");
 class ModulKu
