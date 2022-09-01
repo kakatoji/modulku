@@ -9,13 +9,13 @@ public function keysc(){
             echo self::col("》","k").self::col("Key: ","h");
             $key =trim(fgets(STDIN));
             self::loading("generate key");
-            $c = self::s_key($key);self::strip();
+            $c = self::s_key($key);self::strip("c");
             if($c["status"] != 0){
                 echo self::col("》》》》","k").self::col($c["message"],"h").PHP_EOL;
                 file_put_contents(".key",$key);
                 sleep(4);break;
             }else{
-                echo self::col("《!》","k").self::col($c["message"],"m").PHP_EOL;self::strip();
+                echo self::col("《!》","k").self::col($c["message"],"m").PHP_EOL;self::strip("m");
                 sleep(4);continue;
             }
             endwhile;
